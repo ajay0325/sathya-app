@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 400px;
+    background-color: orangered;
+    position: relative;
+}
+.container1{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.left{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 10px;
+    font-size: 65px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+}
+.left:active{
+    color: grey;
+}
+.right:active{
+    color: grey;
+}
+.right{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
+    font-size: 65px;
+    color: #fff;
+    z-index: 10;
+    cursor: pointer;
+}
