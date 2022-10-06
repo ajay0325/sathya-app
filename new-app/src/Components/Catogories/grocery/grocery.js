@@ -24,17 +24,34 @@ function Grocery() {
         })
     }, [path.lists])
 
+    let newAr;
+    const ascending = ()=>{
+        function low(a,b){
+            return a.offerPrice-b.offerPrice;
+        }
+        newAr = list.sort(low)
+        setList([...newAr])
+    }
+    const descending = ()=>{
+        function high(a,b){
+            return b.offerPrice-a.offerPrice
+        }
+        newAr = list.sort(high)
+        setList([...newAr])
+    }
+    
+
+
+
     return (
         <div className={grstyle.container}>
 
             <div className={grstyle.container2}>
                 <h1>Groceries</h1>
                 <p>filter </p>
-                <select>
-                <option value='none'>None</option>
-                    <option value='low'>Low to High</option>
-                    <option value='high'>High to Low</option>
-                </select>
+                <button onClick={ascending}>Low to High</button>
+                <button onClick={descending}>High to Low</button>
+
                 <div className={grstyle.wrap}>
                     {
                         list.map((data) => {

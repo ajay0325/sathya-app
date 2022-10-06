@@ -56,7 +56,7 @@ function Login() {
                 <input type="password" placeholder="Enter password" onChange={passwordHandler} value={password} /><br></br>
                 {isValid ? <button type="submit" className={styles.submit1} >Submit</button> : <button type="submit" className={styles.submit2} disabled>Submit</button>}
                 <br></br>
-                <p className={styles.text}>Don't have an account? <span><Link to='/signup'>Sign up</Link></span></p>
+                {/* <p className={styles.text}>Don't have an account? <span><Link to='/signup'>Sign up</Link></span></p> */}
             </form>
 
         </div>

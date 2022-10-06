@@ -11,12 +11,55 @@
 .content{
     width: 90%;
 }
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.placeOrder{
+    width: 450px;
+    height: 400px;
+    background: linear-gradient(to right, #FBEE97 , #ADEDD5);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    
+}
+.placeOrder button{
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    background-color: #E65C4F;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.placeOrder button:hover{
+    letter-spacing: 3px;
+    transition: 500ms;
+}
+.placeOrder button:active{
+    background-color: white;
+    color: black;
+}
+.payment{
+    height: 150px;
+    padding: 30px 0px;
+    margin: 20px 0px;
+    line-height: 60px;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: left;
+}
+.payment span{
+    text-align: right;
+}
 .block{
-    width: 700px;
+    width: 750px;
     padding: 30px;
     background-color: rgba(0,0,0,0.2);
     border-radius: 15px;
-    margin: 30px 0px;
 }
 .item{
     border: 2px solid black;

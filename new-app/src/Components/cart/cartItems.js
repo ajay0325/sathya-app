@@ -24,14 +24,14 @@ function CartItems(props) {
                     <button onClick={()=>{
                         if(count>1){
                             setCount(count-1);  
-                            props.minus(offerPrice)  
+                            props.minus(offerPrice,props.price)  
                         }
                                                
                     }}>-</button>
                     <span>{count}</span>
                     <button onClick={()=>{
                         setCount(count+1)
-                        props.add(offerPrice)
+                        props.add(offerPrice,props.price)
                     }}>+</button>
                 </div>
             </div>

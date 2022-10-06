@@ -59,6 +59,7 @@ function TopDeals(){
     return(
         <div className={styleTd.container}>
             <div className={styleTd.container2}>
+                <h1>Top Deals</h1>
             <div className={styleTd.wrap}>
             {
                 sortedArr.map((data,i)=>{
