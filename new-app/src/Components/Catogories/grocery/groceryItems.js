@@ -1,6 +1,6 @@
 // import { useState } from 'react';
 import styles from './grocery.module.css';
-import { useContext, useState } from 'react';
+import { useContext} from 'react';
 import MyContext from '../../../context';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,10 +8,11 @@ import { useNavigate } from 'react-router-dom';
 function GroceryItems(props){
     //  const[qty, setQty] = useState(1)
     const cart = useContext(MyContext);
-    const [cartBtn, setBtn] = useState(true);
+    // const [cartBtn, setBtn] = useState(true);
     const addCart = ()=>{
         cart.addItems(props.item);
-        setBtn(false);
+        cart.btnChange();
+        // setBtn(false);
     }
     // const offer = (props.offer/100)*props.price;
     // const offerPrice = props.price - offer;
@@ -31,18 +32,9 @@ function GroceryItems(props){
             <p>{props.quantity} <span>{props.value}</span></p>
             <p>Offer Price: Rs.<span>{props.offerPrice}</span></p>
             <p><s>M.R.P: Rs.<span>{props.price}</span></s></p>
-            {cartBtn ? <button onClick={addCart}>Add to cart</button> : <b>Added to cart</b>}
+            {cart.cartBtn ? <button onClick={addCart}>Add to cart</button> : <b>Added to cart</b>}
             </div>
             <br></br>
-            {/* <p>{qty}</p>
-            <button onClick={()=>{
-                if(qty>1){
-                    setQty(qty-1)
-                }
-            }}>-</button>
-            <button onClick={()=>{
-                setQty(qty+1)
-            }}>+</button> */}
         </div>
     )
 }

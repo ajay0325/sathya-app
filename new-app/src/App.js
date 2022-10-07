@@ -12,47 +12,60 @@ import Login from "./Components/login/login";
 function App() {
 
   const [cart, setCart] = useState([]);
+  const [cartBtn, setBtn] = useState(true);
 
-  const addItems = (items)=>{
-    
-    fetch('http://localhost:3000/cart', {
-    method: 'POST',
-    headers: {
-        'Accept': 'application/json,text/plain,*/*',
-        'Content-Type': 'application/json',
-        'Accept-Charset': 'utf-8'
-    },
-    body: JSON.stringify(items)
-})
-setCart((prev)=>{
-  return [items,...prev]
-})
+  const btnChange = ()=>{
+    setBtn(false)
   }
 
-// const [items, setItems] = useState([]);
+  const addItems = (items) => {
 
-//   fetch('http://localhost:3000/cart').then((response)=>{
-//     if(response.ok){
-//       return response.json()
-//     }else{
-//       return false;
-//     }
-//   }).then((data)=>{
-//     setItems(data);
-//   })
+    //     fetch('http://localhost:3000/cart', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Accept': 'application/json,text/plain,*/*',
+    //         'Content-Type': 'application/json',
+    //         'Accept-Charset': 'utf-8'
+    //     },
+    //     body: JSON.stringify(items)
+    // })
+    setCart((prev) => {
+      return [items, ...prev]
+    })
+  }
+
+  const remove = (name) => {
+    let item = cart.filter((x) => {
+      return x.name !== name
+    })
+    setCart(item)
+  }
 
 
-  
+  // const [items, setItems] = useState([]);
+
+  //   fetch('http://localhost:3000/cart').then((response)=>{
+  //     if(response.ok){
+  //       return response.json()
+  //     }else{
+  //       return false;
+  //     }
+  //   }).then((data)=>{
+  //     setItems(data);
+  //   })
+
+
+
 
   return (
 
     <div>
-      <MyContext.Provider value={{cart, addItems}}>
+      <MyContext.Provider value={{ cart, addItems,remove,btnChange,cartBtn}}>
         <Header></Header>
         <Routes>
           <Route index element={<Home></Home>}></Route>
           <Route path="/:lists" element={<Grocery></Grocery>}></Route>
-          <Route path="/:detail/:id" element={<GroceryDetails/>}></Route>
+          <Route path="/:detail/:id" element={<GroceryDetails />}></Route>
           <Route path="cart" element={<Cart></Cart>}></Route>
           <Route path='login' element={<Login></Login>}></Route>
         </Routes>

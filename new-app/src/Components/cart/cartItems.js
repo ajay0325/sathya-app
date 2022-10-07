@@ -1,8 +1,10 @@
 
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import MyContext from '../../context';
 import cart from './cart.module.css';
 
 function CartItems(props) {
+    const details = useContext(MyContext)
     const [count, setCount] = useState(1);
     const offer = (props.offer / 100) * props.price;
     const offerPrice = (props.price - offer);
@@ -22,9 +24,12 @@ function CartItems(props) {
             <div className={cart.button}>
                 <div>
                     <button onClick={()=>{
-                        if(count>1){
-                            setCount(count-1);  
-                            props.minus(offerPrice,props.price)  
+                         setCount(count-1);  
+                         props.minus(offerPrice,props.price) 
+                         
+                        if(count<2){
+                            details.remove(props.name)
+                            console.log(count);
                         }
                                                
                     }}>-</button>
@@ -35,7 +40,7 @@ function CartItems(props) {
                     }}>+</button>
                 </div>
             </div>
-
+           
         </div>
     )
 }

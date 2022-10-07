@@ -59,6 +59,16 @@
       "id": 11,
       "link": "grocery",
       "url": "https://www.jiomart.com/images/product/600x600/rvbluw4xll/chai-point-premium-assam-tea-single-origin-tea-fresh-assam-tea-black-tea-leaves-tea-powder-premium-chai-patti-loose-leaf-tea-200g-product-images-orvbluw4xll-p591127023-0-202202261445.jpg"
+    },
+    {
+      "name": "Orange 1kg",
+      "value": "1 kg",
+      "quantity": 1,
+      "offer": 30,
+      "price": 300,
+      "link": "fruits",
+      "url": "https://marketbasketfoods.com/wp-content/uploads/2014/02/oranges-01.jpg",
+      "id": "5"
     }
   ],
   "topdeals": [],

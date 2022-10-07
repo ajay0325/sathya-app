@@ -4,8 +4,8 @@ import MyContext from "../../context";
 import cart from './cart.module.css';
 
 function Cart() {
-
-    // const [cartItems, setCartItems] = useState([]);
+    const details = useContext(MyContext);
+    // const [cartItems, setCartItems] = useState(details.cart);
 
     // useEffect(()=>{
     //     fetch('http://localhost:3000/cart').then((response)=>{
@@ -20,10 +20,17 @@ function Cart() {
     // })
 
 
+    // const remove = (name)=>{
+    //     let item = cartItems.filter((x)=>{
+    //         return x.name!==name
+    //     })
+    //     setCartItems(item)
+    // }
+
     let x = 0;
     let y = 0;
 
-    const details = useContext(MyContext);
+    
     details.cart.forEach((data) => {
         x = x + parseInt(data.price);
         let offer = (data.offer / 100) * data.price;
@@ -33,7 +40,6 @@ function Cart() {
         x = Math.round(x);
 
     });
-    console.log(x);
     const [total, setTotal] = useState(x)
     const [offer, setOffer] = useState(y);
 
@@ -55,13 +61,14 @@ function Cart() {
         })
     }
 
+        console.log(cart);
+
     return (
         <div className={cart.container}>
             <div className={cart.content}>
             <h1>My Cart</h1>
                 <span>(Items {details.cart.length})</span>
                 <div className={cart.section}>
-                
                 <div className={cart.block}>
                     {
                         details.cart.map((data) => {
