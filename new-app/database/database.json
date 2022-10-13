@@ -1,82 +1,11 @@
 {
-  "cart": [
-    {
-      "name": "Beans 1kg",
-      "offer": 50,
-      "price": 500,
-      "value": "1 kg",
-      "quantity": 1,
-      "link": "vegetables",
-      "url": "https://4.imimg.com/data4/TI/MC/MY-27758951/beans-500x500.jpg",
-      "id": "6"
-    },
-    {
-      "name": "Good day cookies",
-      "value": "1 Pkt",
-      "quantity": 1,
-      "offer": 40,
-      "price": 40,
-      "link": "snacks",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-JscbNlAW0TCkd3FtxGvDKyciBqbb-LRJnQ&usqp=CAU",
-      "id": "4"
-    },
-    {
-      "name": "Dark fantasy",
-      "value": "1 no",
-      "quantity": 1,
-      "offer": 60,
-      "price": 60,
-      "link": "snacks",
-      "url": "https://5.imimg.com/data5/WO/KU/GLADMIN-42063961/sunfeast-dark-fantasy-choco-fills-75gm-500x500.png",
-      "id": "3"
-    },
-    {
-      "name": "Basmathi rice",
-      "quantity": 1,
-      "value": "5 kg",
-      "price": 700,
-      "offer": 32,
-      "id": 7,
-      "link": "grocery",
-      "url": "https://www.jiomart.com/images/product/600x600/490507959/india-gate-mini-mogra-basmati-rice-10-kg-product-images-o490507959-p490507959-0-202209221800.jpg"
-    },
-    {
-      "name": "Wheat floor",
-      "quantity": 1,
-      "value": "kg",
-      "price": 100,
-      "offer": 33,
-      "id": 1,
-      "link": "grocery",
-      "url": "https://www.jiomart.com/images/product/original/490750662/aashirvaad-superior-mp-whole-wheat-atta-10-kg-product-images-o490750662-p590150649-0-202203171046.jpg"
-    },
-    {
-      "name": "Tea powder",
-      "quantity": 1,
-      "value": "200 g",
-      "price": 180,
-      "offer": 38,
-      "id": 11,
-      "link": "grocery",
-      "url": "https://www.jiomart.com/images/product/600x600/rvbluw4xll/chai-point-premium-assam-tea-single-origin-tea-fresh-assam-tea-black-tea-leaves-tea-powder-premium-chai-patti-loose-leaf-tea-200g-product-images-orvbluw4xll-p591127023-0-202202261445.jpg"
-    },
-    {
-      "name": "Orange 1kg",
-      "value": "1 kg",
-      "quantity": 1,
-      "offer": 30,
-      "price": 300,
-      "link": "fruits",
-      "url": "https://marketbasketfoods.com/wp-content/uploads/2014/02/oranges-01.jpg",
-      "id": "5"
-    }
-  ],
+  "cart": [],
   "topdeals": [],
   "grocery": [
     {
       "name": "Wheat floor",
       "quantity": 1,
-      "value": "kg",
+      "value": "2 kg",
       "price": 100,
       "offer": 33,
       "id": 1,
@@ -86,7 +15,7 @@
     {
       "name": "Sunflower oil",
       "quantity": 1,
-      "value": "L",
+      "value": "1 L",
       "price": 100,
       "offer": 24,
       "id": 2,
@@ -96,7 +25,7 @@
     {
       "name": "Coconut oil",
       "quantity": 1,
-      "value": "L",
+      "value": "1 L",
       "price": 100,
       "offer": 15,
       "id": 3,
@@ -196,7 +125,7 @@
   ],
   "fruits": [
     {
-      "name": "Apple 1kg",
+      "name": "Apple",
       "value": "1 kg",
       "quantity": 1,
       "offer": 10,
@@ -206,7 +135,7 @@
       "id": "1"
     },
     {
-      "name": "Pineapple 1kg",
+      "name": "Pineapple",
       "value": "1 kg",
       "quantity": 1,
       "offer": 15,
@@ -216,7 +145,7 @@
       "id": "2"
     },
     {
-      "name": "Strawberry 1kg",
+      "name": "Strawberry",
       "value": "1 kg",
       "quantity": 1,
       "offer": 2,
@@ -226,7 +155,7 @@
       "id": "3"
     },
     {
-      "name": "Grapes 1kg",
+      "name": "Grapes",
       "value": "1 kg",
       "quantity": 1,
       "offer": 20,
@@ -236,7 +165,7 @@
       "id": "4"
     },
     {
-      "name": "Orange 1kg",
+      "name": "Orange",
       "value": "1 kg",
       "quantity": 1,
       "offer": 30,
@@ -246,7 +175,7 @@
       "id": "5"
     },
     {
-      "name": "Banana 1kg",
+      "name": "Banana",
       "value": "1 kg",
       "quantity": 1,
       "offer": 50,
@@ -258,7 +187,7 @@
   ],
   "vegetables": [
     {
-      "name": "Tomato 1kg",
+      "name": "Tomato",
       "value": "1 kg",
       "quantity": 1,
       "offer": 10,
@@ -268,7 +197,7 @@
       "id": "1"
     },
     {
-      "name": "Potato 1kg",
+      "name": "Potato",
       "offer": 15,
       "price": 150,
       "value": "1 kg",
@@ -278,7 +207,7 @@
       "id": "2"
     },
     {
-      "name": "Onion 1kg",
+      "name": "Onion",
       "offer": 2,
       "price": 500,
       "value": "1 kg",
@@ -288,7 +217,7 @@
       "id": "3"
     },
     {
-      "name": "Carrot 1kg",
+      "name": "Carrot",
       "offer": 20,
       "value": "1 kg",
       "quantity": 1,
@@ -298,7 +227,7 @@
       "id": "4"
     },
     {
-      "name": "Capsicum 1kg",
+      "name": "Capsicum",
       "offer": 30,
       "price": 300,
       "value": "1 kg",
@@ -307,7 +236,7 @@
       "id": "5"
     },
     {
-      "name": "Beans 1kg",
+      "name": "Beans",
       "offer": 50,
       "price": 500,
       "value": "1 kg",

@@ -11,11 +11,7 @@
 .content{
     width: 90%;
 }
-.section{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0px;
-}
+
 .placeOrder{
     width: 450px;
     height: 400px;
@@ -55,21 +51,32 @@
 .payment span{
     text-align: right;
 }
+.section{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
 .block{
     width: 750px;
-    padding: 30px;
+    padding: 10px 30px;
     background-color: rgba(0,0,0,0.2);
     border-radius: 15px;
 }
 .item{
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
     margin: 20px 0px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+    overflow: hidden;
 }
 .image{
     width: 200px;
     height: 200px;
+    position: relative;
 }
 .image img{
     height: 100%;
@@ -80,7 +87,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    line-height: 30px;
 }
 .button{
     width: 150px;
@@ -101,4 +108,17 @@
 }
 .button button:active{
     background-color: yellow;
+}
+.offer{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f44035;
+    color: white;
+    padding: 3px;
+    font-size: 11px;
+    border: 2px dashed;
+    text-align: center;
+    position: absolute;
+    top: 0;
 }

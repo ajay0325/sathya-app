@@ -29,9 +29,9 @@ function Header(){
         <header className={styles.container}>
             <div className={styles.header}>
             {/* <img></img> */}
-            <p onClick={()=>{
+            <h1 onClick={()=>{
                 navigate('/')
-            }}>Grocify.</p>
+            }}>Grocify</h1>
             <input type='text' className={styles.input} placeholder="Search here ..."></input>
             {user.isLogin ? <p onClick={updateLogout}>Logout</p> : <p onClick={()=>{navigate('login')}}>Login</p>}
             

@@ -56,7 +56,7 @@ function Grocery() {
                     {
                         list.map((data) => {
                             return (
-                                <GroceryItems key={data.id} id={data.id} name={data.name} quantity={data.quantity} value={data.value} price={data.price} offerPrice={data.offerPrice} item={data} image={data.url}></GroceryItems>
+                                <GroceryItems key={data.id} id={data.id} name={data.name} offer={data.offer}quantity={data.quantity} value={data.value} price={data.price} offerPrice={data.offerPrice} item={data} image={data.url}></GroceryItems>
                             )
 
                         })

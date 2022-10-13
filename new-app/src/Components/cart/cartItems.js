@@ -13,10 +13,13 @@ function CartItems(props) {
         <div className={cart.item}>
             <div className={cart.image}>
                 <img src={props.url}></img>
+                <div className={cart.offer}>
+                    <p>Offer</p>
+                    <p><span>{props.offer}</span>%</p>
+                </div>
             </div>
             <div className={cart.details}>
-                <h3>{props.name}</h3>
-                <p>Offer : <span>{props.offer}</span>%</p>
+                <h2>{props.name}</h2>
                 <p>Value:  <span>{props.value}</span></p>
                 <strong>Offer Price: Rs.<span>{count * Math.round(offerPrice)}</span></strong>
                 <p><s>M.R.P: Rs.<span>{count * props.price}</span></s></p>
@@ -32,7 +35,7 @@ function CartItems(props) {
                             console.log(count);
                         }
                                                
-                    }}>-</button>
+                    }}>{count<2 ? <i className='fa fa-trash'></i> : "-"}</button>
                     <span>{count}</span>
                     <button onClick={()=>{
                         setCount(count+1)

@@ -14,7 +14,7 @@ function App() {
   const [cart, setCart] = useState([]);
   const [cartBtn, setBtn] = useState(true);
 
-  const btnChange = ()=>{
+  const btnChange = () => {
     setBtn(false)
   }
 
@@ -29,9 +29,21 @@ function App() {
     //     },
     //     body: JSON.stringify(items)
     // })
-    setCart((prev) => {
-      return [items, ...prev]
+
+    let x = cart.findIndex((item) => {
+      return item.name === items.name
     })
+
+    if (x < 0) {
+      setCart((prev) => {
+        return [items, ...prev]
+      })
+    }else{
+      alert("already in cart")
+    }
+
+
+
   }
 
   const remove = (name) => {
@@ -60,7 +72,7 @@ function App() {
   return (
 
     <div>
-      <MyContext.Provider value={{ cart, addItems,remove,btnChange,cartBtn}}>
+      <MyContext.Provider value={{ cart, addItems, remove, btnChange, cartBtn }}>
         <Header></Header>
         <Routes>
           <Route index element={<Home></Home>}></Route>

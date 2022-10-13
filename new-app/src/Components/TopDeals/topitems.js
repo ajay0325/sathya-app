@@ -23,9 +23,12 @@ function TopItems(props){
             navigate(`/${props.link}/${props.id}`)
         }}>
             <img src={props.image} alt='Products'></img>
+            <div className={styles.offer}>
+                    <p>Offer</p>
+                    <p><span>{props.offer}</span>%</p>
+            </div>
             </div>
             <div className={styles.details}>
-            <p>Offer : <span>{props.offer}</span>%</p>
             <h3>{props.name}</h3>
             <p><span>{props.value}</span></p>
             <p>Offer Price: Rs.<span>{offerPrice}</span></p>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import styles from './grocery.module.css';
 
 
 function GroceryDetails() {
@@ -22,11 +23,18 @@ function GroceryDetails() {
 
 
     return (
-        <div>
-            <div>
-                <img src={data.url}></img>
+        <div className={styles.container}>
+            <div className={styles.container3}>
+            <div className={styles.image}>
+                <img src={data.url} alt="items"></img>
             </div>
+            <div className={styles.details}> 
             <h1>{data.name}</h1>
+            <p><s>M.R.P: Rs.<span>{data.price}</span></s></p>
+            </div>
+            
+            </div>
+            
         </div>
     )
 }
